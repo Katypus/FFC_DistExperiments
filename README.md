@@ -1,4 +1,5 @@
 **XGBOOST RANDOM FOREST MODELS**
+
 Kfoldeval-models.py:
 uses subsets of data to run K-fold evaluations of an
 XGBoost Random Forest model trained on subsets made
@@ -9,6 +10,7 @@ calculated r-squared values of an XGBoost Random Forest model trained on
 a .csv file you input on line 15
 
 **STANESCU FOLDER**
+
 Contains code to reproduce the stanescu_using_2019 model, which won the FFC for the
 best R squared value in predicting a family's material hardship
 
@@ -28,15 +30,18 @@ the stanescu folder to create subsets. (name the subset training.csv and place i
 the stanescu_using_2019 folder to train the stanescu model on the subset)
 
 motherracefilter.py:
+
 Research on the FFC data suggests that attributes of the mother are more influential
 on child outcome than attributes of the father; this file creates subsets of
 background.csv based on race + religion of the mother.
 
 trainingfilter.py:
+
 creates subsets of the training data to train models on; can only be run after 
 running motherracefilter.py or after other subsets of background.csv have been made
 
 Program for evaluation:
+
 leaderboardEval.py:
 for models not trained in this repository; calculates r-squared values of
 outcomes compared to the actual values in the leaderboard set
