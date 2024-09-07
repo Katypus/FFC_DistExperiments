@@ -13,6 +13,9 @@ r-squaredmodel.py:
 calculated r-squared values of an XGBoost Random Forest model trained on
 a .csv file you input on line 15
 
+trainingfilter.py:
+creates subsets of the training data to train models on; can only be run after running motherracefilter.py or after other subsets of background.csv have been made
+
 leaderboardEval.py:
 for models not trained in this repository; calculates r-squared values of
 outcomes compared to the actual values in the leaderboard set
