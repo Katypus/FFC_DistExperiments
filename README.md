@@ -18,11 +18,9 @@ for models not trained in this repository; calculates r-squared values of
 outcomes compared to the actual values in the leaderboard set
 
 DATA FILES:
+
 Any .csv file beginning with a T is a subset of training.csv, and the following
 letters represent what subset of the mother's traits the file has (ex: Twnh.csv
 is a training subset of white non-hispanic mothers)
 
-Any .csv file beginning with a C is a subset of background.csv, and the rest of
-the name represents what subset of the mother's traits the subset has (ex:
-Cblacknonhispanic_mothers.csv is a subset of background.csv of Black
-non-Hispanic Mothers)
+*For most of these programs to run, they must be able to access background.csv, leaderboard.csv, and training.csv, all of which you must be authorized to access at the Office of Population Research at Princeton University
